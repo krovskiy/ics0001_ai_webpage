@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>My Website - Overview</title>
+        <title>My Website - Contact</title>
 
         <!-- CSS FILES -->      
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,8 +19,6 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/apexcharts.css" rel="stylesheet">
 
         <link href="css/tooplate-mini-finance.css" rel="stylesheet">
     </head>
@@ -62,7 +60,7 @@
                                     </div>
 
                                     <div>
-                                        <span>Welcome to your dashboard!</span>
+                                        <span>Your message has been sent successfully.</span>
 
                                         <p>Just now</p>
                                     </div>
@@ -76,7 +74,7 @@
                                     </div>
 
                                     <div>
-                                        <span>Your profile has been updated.</span>
+                                        <span>We received your inquiry.</span>
 
                                         <p>2 days ago</p>
                                     </div>
@@ -90,7 +88,7 @@
                                     </div>
 
                                     <div>
-                                        <span>New features available.</span>
+                                        <span>Contact form available.</span>
 
                                         <p>1 week ago</p>
                                     </div>
@@ -147,7 +145,7 @@
                     <div class="position-sticky py-4 px-3 sidebar-sticky">
                         <ul class="nav flex-column h-100">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">
+                                <a class="nav-link" aria-current="page" href="index.html">
                                     <i class="bi-house-fill me-2"></i>
                                     Overview
                                 </a>
@@ -168,7 +166,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
+                                <a class="nav-link active" href="contact.html">
                                     <i class="bi-envelope me-2"></i>
                                     Contact
                                 </a>
@@ -192,90 +190,73 @@
 
                 <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
                     <div class="title-group mb-3">
-                        <h1 class="h2 mb-0">Overview</h1>
+                        <h1 class="h2 mb-0">Contact</h1>
                     </div>
 
                     <div class="row my-4">
-                        <div class="col-lg-4 col-12 mb-4">
+                        <div class="col-lg-7 col-12">
                             <div class="custom-block bg-white">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="https://picsum.photos/80/80?random=2" class="profile-image img-fluid me-3" alt="">
-                                    <div>
-                                        <h5 class="mb-0">Welcome</h5>
-                                        <small class="text-muted">Dashboard Overview</small>
+                                <h5 class="mb-4">Get in Touch</h5>
+
+                                <form class="custom-form contact-form" action="#" method="post" role="form">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <input class="form-control" type="text" name="name" id="name" placeholder="Your Name" required>
+                                        </div>
+
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <input class="form-control" type="email" name="email" id="email" placeholder="Your Email" required>
+                                        </div>
+
+                                        <div class="col-lg-12 col-12 mb-3">
+                                            <input class="form-control" type="text" name="subject" id="subject" placeholder="Subject" required>
+                                        </div>
+
+                                        <div class="col-lg-12 col-12 mb-3">
+                                            <textarea class="form-control" name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                                        </div>
+
+                                        <div class="col-lg-12 col-12">
+                                            <button type="submit" class="form-control">
+                                                Send Message
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                                <p>Welcome to your personal dashboard. Here you can manage your wallet, update your profile, and get in touch.</p>
+                                </form>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-12 mb-4">
-                            <div class="custom-block bg-white">
-                                <div class="d-flex align-items-center mb-3">
-                                    <img src="https://picsum.photos/80/80?random=3" class="profile-image img-fluid me-3" alt="">
-                                    <div>
-                                        <h5 class="mb-0">Quick Access</h5>
-                                        <small class="text-muted">Navigation</small>
-                                    </div>
-                                </div>
-                                <p>Navigate through different sections using the sidebar menu. Access your wallet, profile, and contact information.</p>
-                            </div>
-                        </div>
+                        <div class="col-lg-5 col-12">
+                            <div class="custom-block custom-block-contact">
+                                <h6 class="mb-4">Contact Information</h6>
 
-                        <div class="col-lg-4 col-12 mb-4">
-                            <div class="custom-block bg-white">
                                 <div class="d-flex align-items-center mb-3">
-                                    <img src="https://picsum.photos/80/80?random=4" class="profile-image img-fluid me-3" alt="">
+                                    <img src="https://picsum.photos/64/64?random=11" class="profile-image img-fluid me-3" alt="">
                                     <div>
-                                        <h5 class="mb-0">Get Started</h5>
-                                        <small class="text-muted">Quick Actions</small>
+                                        <p class="mb-0"><strong>Email</strong></p>
+                                        <small>user@example.com</small>
                                     </div>
                                 </div>
-                                <p>Start by exploring your wallet, updating your profile information, or reaching out through the contact page.</p>
-                            </div>
-                        </div>
 
-                        <div class="col-lg-12 col-12">
-                            <div class="custom-block bg-white">
-                                <h5 class="mb-4">Recent Activity</h5>
-                                <div class="row">
-                                    <div class="col-lg-6 col-12 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://picsum.photos/64/64?random=6" class="profile-image img-fluid me-3" alt="">
-                                            <div>
-                                                <p class="mb-0"><strong>Profile Updated</strong></p>
-                                                <small class="text-muted">2 days ago</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://picsum.photos/64/64?random=7" class="profile-image img-fluid me-3" alt="">
-                                            <div>
-                                                <p class="mb-0"><strong>Wallet Transaction</strong></p>
-                                                <small class="text-muted">5 days ago</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://picsum.photos/64/64?random=8" class="profile-image img-fluid me-3" alt="">
-                                            <div>
-                                                <p class="mb-0"><strong>Contact Form Submitted</strong></p>
-                                                <small class="text-muted">1 week ago</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-12 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <img src="https://picsum.photos/64/64?random=9" class="profile-image img-fluid me-3" alt="">
-                                            <div>
-                                                <p class="mb-0"><strong>Account Created</strong></p>
-                                                <small class="text-muted">2 weeks ago</small>
-                                            </div>
-                                        </div>
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://picsum.photos/64/64?random=12" class="profile-image img-fluid me-3" alt="">
+                                    <div>
+                                        <p class="mb-0"><strong>GitHub</strong></p>
+                                        <a href="https://github.com/stepden04" target="_blank">github.com/stepden04</a>
                                     </div>
                                 </div>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="https://picsum.photos/64/64?random=13" class="profile-image img-fluid me-3" alt="">
+                                    <div>
+                                        <p class="mb-0"><strong>Location</strong></p>
+                                        <small>Available Worldwide</small>
+                                    </div>
+                                </div>
+
+                                <a href="https://github.com/stepden04" target="_blank" class="btn custom-btn custom-btn-bg-white mt-3">
+                                    Visit GitHub Profile
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -300,7 +281,6 @@
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/apexcharts.min.js"></script>
         <script src="js/custom.js"></script>
     </body>
 </html>
