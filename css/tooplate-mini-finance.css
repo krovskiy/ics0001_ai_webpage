@@ -48,7 +48,7 @@ https://www.tooplate.com/view/2135-mini-finance
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family);
-  background-image: url('https://picsum.photos/1920/1080?random=1');
+  background-image: url('https://picsum.photos/id/1015/1920/1080');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -964,6 +964,10 @@ strong {
   padding: 10px 20px;
   outline: none;
   transition: all 0.3s;
+}
+
+.custom-form textarea.form-control {
+  border-radius: var(--border-radius-small);
 }
 
 .form-check-input:checked {
