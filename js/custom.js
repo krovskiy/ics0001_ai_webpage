@@ -3,6 +3,9 @@
   
   "use strict";
 
+    // Wait for document to be ready
+    $(document).ready(function() {
+
     // MENU
     $('#sidebarMenu .nav-link').on('click',function(){
       $("#sidebarMenu").collapse('hide');
@@ -31,6 +34,8 @@
     // SEARCH FUNCTIONALITY
     $('.header-form').on('submit', function(e) {
       e.preventDefault();
+      e.stopPropagation();
+      
       var searchTerm = $(this).find('input[name="search"]').val().toLowerCase().trim();
       
       if (!searchTerm) {
@@ -72,6 +77,12 @@
             if (currentPage !== targetPage) {
               window.location.href = targetPage;
               return false;
+            } else {
+              // Already on the page, just scroll to top
+              $('html, body').animate({
+                scrollTop: 0
+              }, 500);
+              return false;
             }
           }
         }
@@ -81,7 +92,10 @@
       alert('No results found for "' + searchTerm + '". Try searching for: profile, wallet, contact, or overview.');
       return false;
     });
+
+    }); // End document ready
   
   })(window.jQuery);
+
 
 
