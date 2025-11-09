@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>My Website - Profile</title>
+        <title>My Website - README</title>
 
         <link rel="icon" type="image/x-icon" href="https://taltech.ee/static/favicon.ico">
 
@@ -23,15 +23,9 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/tooplate-mini-finance.css" rel="stylesheet">
-<!--
 
-Tooplate 2135 Mini Finance
-
-https://www.tooplate.com/view/2135-mini-finance
-
-Bootstrap 5 Dashboard Admin Template
-
--->
+        <!-- Marked.js for Markdown parsing -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
     
     <body>
@@ -46,7 +40,7 @@ Bootstrap 5 Dashboard Admin Template
             <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0" onsubmit="return false;" role="form">
                 <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
             </form>
@@ -71,9 +65,9 @@ Bootstrap 5 Dashboard Admin Template
                                     </div>
 
                                     <div>
-                                        <span>Your account has been created successfuly.</span>
+                                        <span>README page available.</span>
 
-                                        <p>12 days ago</p>
+                                        <p>Just now</p>
                                     </div>
                                 </a>
                             </li>
@@ -85,9 +79,9 @@ Bootstrap 5 Dashboard Admin Template
                                     </div>
 
                                     <div>
-                                        <span>Please check. We have sent a Daily report.</span>
+                                        <span>Project documentation updated.</span>
 
-                                        <p>10 days ago</p>
+                                        <p>2 days ago</p>
                                     </div>
                                 </a>
                             </li>
@@ -99,9 +93,9 @@ Bootstrap 5 Dashboard Admin Template
                                     </div>
 
                                     <div>
-                                        <span>Account verification failed.</span>
+                                        <span>Check README for more info.</span>
 
-                                        <p>1 hour ago</p>
+                                        <p>1 week ago</p>
                                     </div>
                                 </a>
                             </li>
@@ -170,7 +164,7 @@ Bootstrap 5 Dashboard Admin Template
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" href="profile.html">
+                                <a class="nav-link" href="profile.html">
                                     <i class="bi-person me-2"></i>
                                     Profile
                                 </a>
@@ -184,7 +178,7 @@ Bootstrap 5 Dashboard Admin Template
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="readme.html">
+                                <a class="nav-link active" href="readme.html">
                                     <i class="bi-file-text me-2"></i>
                                     README
                                 </a>
@@ -202,107 +196,20 @@ Bootstrap 5 Dashboard Admin Template
 
                 <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
                     <div class="title-group mb-3">
-                        <h1 class="h2 mb-0">Profile</h1>
+                        <h1 class="h2 mb-0">README</h1>
                     </div>
 
                     <div class="row my-4">
-                        <div class="col-lg-7 col-12">
-                            <div class="custom-block custom-block-profile">
-                                <div class="row">
-                                    <div class="col-lg-12 col-12 mb-3">
-                                        <h6>General</h6>
-                                    </div>
-
-                                    <div class="col-lg-3 col-12 mb-4 mb-lg-0">
-                                        <div class="custom-block-profile-image-wrap">
-                                            <img src="https://picsum.photos/id/30/200/200" class="custom-block-profile-image img-fluid" alt="">
-
-                                            <a href="contact.html" class="bi-pencil-square custom-block-edit-icon"></a>
+                        <div class="col-lg-12 col-12">
+                            <div class="custom-block bg-white">
+                                <div id="readme-content" style="min-height: 400px;">
+                                    <div class="text-center py-5">
+                                        <div class="spinner-border text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
                                         </div>
-                                    </div>
-
-                                    <div class="col-lg-9 col-12">
-                                        <p class="d-flex flex-wrap mb-2">
-                                            <strong>Name:</strong>
-
-                                            <span>Stepan Denysenko</span>
-                                        </p>
-
-                                        <p class="d-flex flex-wrap mb-2">
-                                            <strong>Email:</strong>
-                                            
-                                            <a href="mailto:stepan@taltech.ee">
-                                                stepan@taltech.ee
-                                            </a>
-                                        </p>
-
-                                        <p class="d-flex flex-wrap mb-2">
-                                            <strong>Phone:</strong>
-
-                                            <a href="#">
-                                                (60) 12 345 6789
-                                            </a>
-                                        </p>
-
-                                        <p class="d-flex flex-wrap mb-2">
-                                            <strong>Birthday:</strong>
-
-                                            <span>March 5, 1992</span>
-                                        </p>
-
-                                        <p class="d-flex flex-wrap">
-                                            <strong>Address:</strong>
-
-                                            <span>551 Swanston Street, Melbourne</span>
-                                        </p>
+                                        <p class="mt-3">Loading README...</p>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="custom-block custom-block-profile bg-white">
-                                <h6 class="mb-4">Card Information</h6>
-
-                                <p class="d-flex flex-wrap mb-2">
-                                    <strong>User ID:</strong>
-
-                                    <span>012 395 8647</span>
-                                </p>
-
-                                <p class="d-flex flex-wrap mb-2">
-                                    <strong>Type:</strong>
-
-                                    <span>Personal</span>
-                                </p>
-
-                                <p class="d-flex flex-wrap mb-2">
-                                    <strong>Created:</strong>
-
-                                    <span>July 19, 2020</span>
-                                </p>
-
-                                <p class="d-flex flex-wrap mb-2">
-                                    <strong>Valid Date:</strong>
-
-                                    <span>July 18, 2032</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-5 col-12">
-                            <div class="custom-block custom-block-contact">
-                                <h6 class="mb-4">Still can’t find what you looking for?</h6>
-
-                                <p>
-                                    <strong>Call us:</strong>
-                                    <a href="tel: 305-240-9671" class="ms-2">
-                                        (60) 
-                                        305-240-9671
-                                    </a>
-                                </p>
-
-                                <a href="#" class="btn custom-btn custom-btn-bg-white mt-3">
-                                    Chat with us
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -328,6 +235,51 @@ Bootstrap 5 Dashboard Admin Template
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
-
+        
+        <script>
+            // Fetch and render README.md
+            fetch('https://raw.githubusercontent.com/stepden04/ics0001_ai_webpage/main/README.md')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch README');
+                    }
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Parse markdown to HTML
+                    const html = marked.parse(markdown);
+                    
+                    // Apply Bootstrap styling to markdown content
+                    const styledHtml = html
+                        .replace(/<h1>/g, '<h1 class="mb-4 mt-4">')
+                        .replace(/<h2>/g, '<h2 class="mb-3 mt-4">')
+                        .replace(/<h3>/g, '<h3 class="mb-3 mt-3">')
+                        .replace(/<h4>/g, '<h4 class="mb-2 mt-3">')
+                        .replace(/<h5>/g, '<h5 class="mb-2 mt-2">')
+                        .replace(/<h6>/g, '<h6 class="mb-2 mt-2">')
+                        .replace(/<p>/g, '<p class="mb-3">')
+                        .replace(/<ul>/g, '<ul class="mb-3">')
+                        .replace(/<ol>/g, '<ol class="mb-3">')
+                        .replace(/<li>/g, '<li class="mb-1">')
+                        .replace(/<code>/g, '<code class="bg-light p-1 rounded">')
+                        .replace(/<pre>/g, '<pre class="bg-light p-3 rounded mb-3"><code>')
+                        .replace(/<\/pre>/g, '</code></pre>')
+                        .replace(/<a href=/g, '<a class="text-primary" href=')
+                        .replace(/<table>/g, '<table class="table table-bordered mb-3">')
+                        .replace(/<blockquote>/g, '<blockquote class="border-start border-3 ps-3 mb-3">');
+                    
+                    document.getElementById('readme-content').innerHTML = styledHtml;
+                })
+                .catch(error => {
+                    document.getElementById('readme-content').innerHTML = 
+                        '<div class="alert alert-danger" role="alert">' +
+                        '<h5>Error loading README</h5>' +
+                        '<p>Could not fetch README.md from GitHub. Error: ' + error.message + '</p>' +
+                        '<p>Please check your internet connection or visit the repository directly: ' +
+                        '<a href="https://github.com/stepden04/ics0001_ai_webpage" target="_blank">GitHub Repository</a></p>' +
+                        '</div>';
+                });
+        </script>
     </body>
 </html>
+
