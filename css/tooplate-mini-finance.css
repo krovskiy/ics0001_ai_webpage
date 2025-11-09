@@ -636,6 +636,16 @@ a:hover .custom-block {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+a.text-decoration-none .custom-block h5,
+a.text-decoration-none .custom-block p,
+a.text-decoration-none .custom-block small {
+  color: inherit;
+}
+
+a.text-decoration-none:hover {
+  text-decoration: none;
+}
+
 .custom-block h2,
 .custom-block p {
   position: relative;
