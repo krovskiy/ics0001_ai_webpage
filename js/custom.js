@@ -27,6 +27,61 @@
         }, 300);
       }
     });
+
+    // SEARCH FUNCTIONALITY
+    $('.header-form').on('submit', function(e) {
+      e.preventDefault();
+      var searchTerm = $(this).find('input[name="search"]').val().toLowerCase().trim();
+      
+      if (!searchTerm) {
+        return false;
+      }
+
+      // Define page keywords mapping
+      var pageKeywords = {
+        'profile': ['profile', 'name', 'email', 'stepan', 'denysenko', 'personal', 'information', 'account'],
+        'wallet': ['wallet', 'transaction', 'balance', 'payment', 'money', 'account', 'activity', 'transfer'],
+        'contact': ['contact', 'message', 'email', 'reach', 'touch', 'tallinn', 'estonia', 'stepan@taltech'],
+        'overview': ['overview', 'dashboard', 'home', 'welcome', 'main']
+      };
+
+      // Check current page content first
+      var pageContent = $('body').text().toLowerCase();
+      if (pageContent.indexOf(searchTerm) !== -1) {
+        // Search found on current page - highlight and scroll to first occurrence
+        var found = false;
+        $('h1, h2, h3, h4, h5, h6, p, span, a, li').each(function() {
+          if (!found && $(this).text().toLowerCase().indexOf(searchTerm) !== -1) {
+            $('html, body').animate({
+              scrollTop: $(this).offset().top - 100
+            }, 500);
+            found = true;
+            return false;
+          }
+        });
+        return false;
+      }
+
+      // Navigate to appropriate page based on keywords
+      var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+      
+      for (var page in pageKeywords) {
+        for (var i = 0; i < pageKeywords[page].length; i++) {
+          if (searchTerm.indexOf(pageKeywords[page][i]) !== -1 || pageKeywords[page][i].indexOf(searchTerm) !== -1) {
+            var targetPage = page === 'overview' ? 'index.html' : page + '.html';
+            if (currentPage !== targetPage) {
+              window.location.href = targetPage;
+              return false;
+            }
+          }
+        }
+      }
+
+      // If no match found, show alert
+      alert('No results found for "' + searchTerm + '". Try searching for: profile, wallet, contact, or overview.');
+      return false;
+    });
   
   })(window.jQuery);
+
 
